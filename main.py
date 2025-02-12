@@ -5,8 +5,11 @@ def read_in_content():
         return file_contents
 
 def main():
-    print(read_in_content())
-
+    words_count = read_in_content().split()
+    count = 0 
+    for word in words_count:
+        count += 1
+    print(count)
 
 main()
 
